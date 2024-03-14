@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="Css/reset.css">
+        <link rel="stylesheet" href="Css/MiRutacss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>inicio de sesión</title>
+    </head>
+
+    <body>
+        
+        <header class="titulo-sesion">
+            <h1><img class="logotipo" src="image/logotipoPequeño.png" alt="logotipo"></h1>
+            <h2>Iniciar sesión</h2>
+        </header>
+        
+        <main>
+            <section class="formulario-inicioSesion">      
+                <form>
+                    <label for="usuario">usuario</label>
+                    <input type="text" id="usuario" class="input-padron" autocomplete="username" placeholder>
+                    
+                    <label for="contrasenha">contraseña</label>
+                    <input type="password" id="contrasenha" class="input-padron" autocomplete="current-password" placeholder>
+
+                    <input type="submit" id="guardar" value="continuar" class="boton-continuar" formaction="Rutas.html">
+                </form>
+                <a href="RecuperarContraseña.html">¿olvidaste tu contraseña?</a>
+            </section>     
+        </main>  
+            <footer>
+                <p class="copyright">&copy Copyright MiRuta - 2024</p>
+            </footer>
+        <script src="Js/inicioSesion.js"></script>  
+    </body>
+</html>

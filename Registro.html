@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="Css/reset.css">
+        <link rel="stylesheet" href="Css/MiRutacss.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <title>Registro</title>
+    </head>
+    <body>
+        <main class="contenido-registro">
+            <section class="informacion-registro">
+                <h1><img class="logotipo" src="image/logotipoPequeño.png" alt="imagen de logo"></h1>
+                <h2>¡Registrate aquí!</h2>
+            </section>
+            <form class="formulario">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" class="input-padron" required placeholder>
+    
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" class="input-padron" required placeholder>
+
+                <label for="documento">Documento</label>
+                <input type="number" id="documento" class="input-padron" required placeholder>
+    
+                <label for="correo_electronico">Correo electronico</label>
+                <input type="email" id="correo_electronico" class="input-padron" required placeholder>
+
+                <label for="tarjeta_sitp">Tarjeta SITP</label>
+                <input type="tel" id="tarjeta_sitp" class="input-padron" required placeholder>
+    
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder>
+
+
+                <input type="submit" id="btnRegistrar" value="continuar" class="boton-continuar">
+            </form>
+        </main>
+
+        <footer>
+            <p class="copyright">&copy Copyright MiRuta - 2024</p>
+        </footer>
+    
+        <script src="Js/Registro.js"></script>
+    </body>
+</html>
