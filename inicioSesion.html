@@ -20,12 +20,14 @@
         
         <main>
             <section class="formulario-inicioSesion">      
-                <form>
+                <form id = "formulario">
                     <label for="usuario">usuario</label>
-                    <input type="text" id="usuario" class="input-padron" autocomplete="username" placeholder>
+                    <input type="text" id="usuario" class="input-inicioSesion" autocomplete="username" placeholder>
+                    <p id="usuarioInvalido"></p>
                     
                     <label for="contrasenha">contraseña</label>
-                    <input type="password" id="contrasenha" class="input-padron" autocomplete="current-password" placeholder>
+                    <input type="password" id="contrasenha" class="input-inicioSesion" autocomplete="current-password" placeholder>
+                    <p id="contrasenhaInvalida"></p>
 
                     <input type="submit" id="guardar" value="continuar" class="boton-continuar" formaction="Rutas.html">
                 </form>

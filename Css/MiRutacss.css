@@ -114,9 +114,31 @@ body{
 .formulario-inicioSesion label{
     color: #ffffff;
 }
+.input-inicioSesion{
+
+    display: block;
+    margin: 0px auto 0px;
+    padding: 5px 30px;
+
+}
+.formulario-inicioSesion p{
+
+    margin: 2px 0px 30px 0px;
+    padding: 5px auto ;
+    text-align: center;
+    color: #991313;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
 .formulario-inicioSesion a{
     color: #ffffff;
     text-decoration: none;
+    font-size: 13px;
+}
+.formulario-inicioSesion a:hover{
+
+    color: #ffa500;
     font-size: 13px;
 }
 
