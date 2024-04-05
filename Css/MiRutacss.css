@@ -111,6 +111,14 @@ body{
     border-radius: 200px;
     margin: 0px 50px;
 }
+.vacio{
+    border-color: #ff0000;
+    outline: none;
+}
+.lleno{
+    border-color: #09ff00;
+    outline: none;
+}
 .formulario-inicioSesion label{
     color: #ffffff;
 }
@@ -119,6 +127,7 @@ body{
     display: block;
     margin: 0px auto 0px;
     padding: 5px 30px;
+    outline: none;
 
 }
 .formulario-inicioSesion p{
