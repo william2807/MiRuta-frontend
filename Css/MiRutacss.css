@@ -76,10 +76,31 @@ body{
 .formulario label{
     color: #ffffff;
 }
-.input-padron{
+.input-registro{
     display: block;
-    margin: 0px auto 30px;
+    margin: 0px auto 0px;
     padding: 5px 30px;
+    outline: none;
+}
+/*se maneja el estilo segun el comportamiento de los campos*/
+.vacio-registro{
+    color: #ffffff;
+    color: #991313;
+}
+.lleno-registro{
+    visibility: hidden;
+}
+.campo-submit-incompleto{
+    color: #991313;
+    
+}
+/*------------------------------------------------------------*/
+.formulario p{
+    margin: 2px 0px 30px 0px;
+    padding: 5px auto ;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .boton-continuar{
     padding: 15px 60px;
