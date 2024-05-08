@@ -39,8 +39,6 @@ let msjTelefono = '';
 /*En el siguiente fragmento se haran las validaciones del formulario en las cuales
 sea restringido el ingreso si no se llenan el campo de los formularios*/
 
-// se crea la variable booleana , para hacer uso en el evento de del formularioRegistro
-ingresar = true;
 
 //se crea un evento al formulario tipo submit
 formularioRegistro.addEventListener("submit", e =>{
@@ -48,29 +46,34 @@ formularioRegistro.addEventListener("submit", e =>{
     //se previene para que no se envie
     e.preventDefault();
 
+    // se crea la variable booleana , para hacer uso en el evento de del formularioRegistro
+    ingresar = true;
+
     /*Se realizan las validaciones de que los campos que son obligatorios sean llenados
     de lo contrario, el formulario no podra enviarse al servidor*/
     if(nombres.value.trim() === ""|| nombres.value.length < 2){
         msjNombres = 'debes ingresar un nombre valido';
         mensajesErrorRegistro.nombresInvalidos.classList.add("campo-submit-incompleto");
-        ingresar;
+        ingresar = false;
     }
     if(apellidos.value.trim() === "" || nombres.value.length < 2){
         mensajesErrorRegistro.apellidosInvalidos.classList.add("campo-submit-incompleto");
         msjApellidos = 'debes ingresar un apellido valido';
-        ingresar;
+        ingresar = false;
     } 
     if(documento.value.trim() === "" || documento.value.length < 7){
         mensajesErrorRegistro.documentoInvalido.classList.add("campo-submit-incompleto");
         msjDocumento = 'debes ingresar un documento valido';
-        ingresar;
+        ingresar = false;
     }
 
     //en este caso, si los if son verdaderos entran y modifican el texto del mensaje
-    if(ingresar){
+    if(!ingresar){
         mensajesErrorRegistro.nombresInvalidos.innerHTML = msjNombres;
         mensajesErrorRegistro.apellidosInvalidos.innerHTML = msjApellidos;
         mensajesErrorRegistro.documentoInvalido.innerHTML = msjDocumento;
+    }else{
+        window.location.href = "inicioSesion.html";
     }
 });
 
@@ -299,6 +302,15 @@ let registrarUsuario = async () => {
         //se convierte las cadenas de texto de los campos del formulario en JSON
         body: JSON.stringify(camposRegistro)
     });
+
+    if(peticion.ok){
+        const status = peticion.body;
+
+        console.log("registro exitoso: ", status);
+    }else{
+        console.error("error al registrar: ", peticion.status);
+    }
+
 }
 
 //se crea una variable que trae el boton del submit

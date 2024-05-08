@@ -173,7 +173,7 @@ body{
 }
 
 /*validar saldo*/
-.menu-validarsaldo{
+.menu-validar-saldo{
     margin: 0px 50px;
 }
 .tamaño-tabla{
@@ -182,26 +182,34 @@ body{
     border-radius: 150px;
     color: #ffffff;
 }
-.tabla-recarga{
+.tabla-saldo{
     margin: 30px auto;
 
 }
-.tabla-recarga tr th{
+.tabla-saldo tr th{
     border: 1px solid #000000;
     
 }
-.titulo-recarga th{
+.titulo-saldo th{
     padding: 15px;
     color: #000000;
     background: #ffffff;
 
 }
-.contenido-recarga th{
+.contenido-saldo th{
     padding: 50px;
     background-color: #ffffff;
 }
-.redireccion-recarga{
+.calcula-saldo{
     text-align: center;
+}
+.calcula-saldo p{
+    padding: 0px 0px 10px 0px;
+}
+.calcula-saldo input{
+    display: block;
+    margin: 0px auto 0px;
+    padding: 5px 20px;
 }
 .boton-saldo{
     text-align: center;
